@@ -1,0 +1,187 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styling.css">
+
+<title>
+Registration
+</title>
+
+</head>
+
+<body>
+
+<div class="main-header">
+NEW WORLD BANK
+</div>
+
+
+<list>
+
+<ul>
+
+<li><a href="welcome.html">HOME</a></li>
+
+<li><a href="branches.html">BRANCHES</a></li>
+
+<li><a href="welcome.html">ACCOUNT </a></li>
+
+<li><a href="https:www.google.com">LOAN</a></li> 
+<li><a href="aboutus.html">ABOUT US</a></li> 
+
+<li><a href="contactus.html">CONTACT US</a></li>  
+
+</ul>
+
+</list>
+
+
+
+<marquee height="70"  behavior="scroll" direction="left"><h2>Welcome To Our New World Bank</h2></marquee>
+
+<div class="text1">
+USER REGISTRATION
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src= registration.js></script>
+
+</script>
+</head>
+
+<body>
+
+
+<table align="center" cellpadding = "10">
+
+<!--------Transaction ID--->
+<tr>
+<td>TRANSACTION ID</td>
+<td><input type="text" name="transaction_id" id="cid" maxlength="30"/>
+Note: Transaction Id is provided by your bank branch.
+</td>
+</tr>
+
+<tr>
+<td>Account Number</td>
+<td><input type="text" name="accNum" id="accNumber" /></td>
+</tr>
+
+
+<button style="float:right;"; type=button  onclick="validate()">Validate</button>
+
+
+<tr>
+<td>Account Type 
+</td>
+<td>
+<select id='atype'>
+<option value='Current'> Current</option>
+<option value='Savings'>Savings</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="First_Name" id="fname" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="Last_Name" id="lname" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+
+<!----Password--->
+<tr>
+<td>Password</td>
+<td><input type="password" id="pwd" maxlength="30"/>
+7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter
+</td>
+</tr>
+
+<!----Confirm Password--->
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" id="cpwd" maxlength="30"/>
+</td>
+</tr>
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="email" id='email' name="Email_Id" maxlength="100" /></td>
+</tr>
+
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>PHONE NUMBER</td>
+<td>
+<input type="number" name="Mobile_Number" id='mob' maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+
+
+
+<!----- Date Of Birth ---------------------------------------------------------->
+<tr>
+<td>Date Of Birth</td>
+<td><input type="date" id="dob" maxlength="100" /></td>
+</tr>
+
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>Nationality</td>
+<td><input type="text" name="Country" value="India" id="nat"  /></td>
+</tr>
+ 
+
+<tr>
+<td>Branch Name
+</td>
+<td>
+<select id='BranchName'>
+<option value='Wagoli'> Wagoli</option>
+<option value='Kharadi'>Kharadi</option>
+<option value='Hadapsar'>Hadapsar</option>
+</select>
+</td>
+</tr>
+
+
+ 
+
+
+<tr>
+<td>IFSC CODE</td>
+<td><input type="text" name="code" " id="ifsccode" /></td>
+</tr>
+ 
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<button type=button  onclick="submit()">Submit</button>
+
+      
+
+</td>
+</tr>
+</table>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src= registration.js>
+
+</script>
+
+</body>
+</html>
+
+
+
+
